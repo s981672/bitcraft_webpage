@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITCRAFT - 계정 및 데이터 삭제 요청</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; background-color: #f5f7f9; color: #333; line-height: 1.6; padding: 20px; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { font-size: 24px; color: #2c3e50; text-align: center; margin-bottom: 10px; }
+        p { font-size: 14px; color: #666; text-align: center; margin-bottom: 25px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 8px; font-size: 14px; }
+        input[type="email"], input[type="text"], textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px;
+        }
+        .info-box { background: #fff4f4; border-left: 4px solid #e74c3c; padding: 10px 15px; margin-bottom: 20px; font-size: 13px; color: #c0392b; }
+        button { 
+            width: 100%; padding: 14px; background-color: #2c3e50; color: white; border: none; border-radius: 6px; 
+            font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s;
+        }
+        button:hover { background-color: #1a252f; }
+        .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #999; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>계정 및 데이터 삭제 요청</h1>
+    <p>비트크래프트 서비스를 이용해 주셔서 감사합니다.<br>삭제 요청을 주시면 확인 후 안전하게 처리해 드립니다.</p>
+
+    <div class="info-box">
+        계정 삭제 시 모든 활동 기록 및 개인정보가 파기되며, 이 작업은 복구할 수 없습니다.
+    </div>
+
+    <form action="https://formspree.io/f/mykekren" method="POST">
+        <div class="form-group">
+            <label for="email">가입 시 사용한 이메일 주소</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">인증코드</label>
+            <input type="text" name="name" id="name" placeholder="할일 공유 시에 등록하신 인증코드를 입력해주세요." required>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">삭제 요청 상세 (선택)</label>
+            <textarea name="reason" id="reason" rows="4" placeholder="예: 더 이상 서비스를 사용하지 않음 / 모든 데이터 삭제 희망"></textarea>
+        </div>
+
+        <button type="submit">삭제 요청 제출하기</button>
+    </form>
+
+    <div class="footer">
+        © 2026 BITCRAFT. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
