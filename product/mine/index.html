@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ 지뢰찾기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .dimmed { opacity: 0.5; cursor: not-allowed; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <nav class="max-w-5xl mx-auto mb-8">
+        <a href="../index.html" class="text-gray-400 hover:text-white transition flex items-center gap-2">
+            <i class="fas fa-arrow-left"></i> 게임 목록으로 돌아가기
+        </a>
+    </nav>
+
+    <main class="max-w-5xl mx-auto">
+        <section class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-3">MZ 지뢰찾기</h1>
+                <p class="text-blue-400 text-lg">Brain & Puzzle</p>
+            </div>
+            <div class="hidden md:flex gap-3 w-full md:w-auto">
+                <a href="https://play.google.com/store/apps/details?id=kr.co.bitcraft.mine" class="flex-1 md:flex-none bg-white text-black px-6 py-3 rounded-xl font-bold flex items-center justify-center hover:bg-gray-200 transition">
+                    <i class="fab fa-google-play mr-2 text-xl"></i> Google Play
+                </a>
+                <a href="#" class="flex-1 md:flex-none bg-white text-black px-6 py-3 rounded-xl font-bold flex items-center justify-center hover:bg-gray-200 transition dimmed">
+                    <i class="fab fa-apple mr-2 text-xl"></i> App Store
+                </a>
+            </div>
+
+        </section>
+
+        <section class="mb-12">
+            <div class="flex gap-4 overflow-x-auto no-scrollbar pb-4">
+                <img src="1.jpg" class="w-64 md:w-72 rounded-2xl border border-slate-700 flex-shrink-0 shadow-2xl">
+                <img src="2.jpg" class="w-64 md:w-72 rounded-2xl border border-slate-700 flex-shrink-0 shadow-2xl">
+                <img src="3.jpg" class="w-64 md:w-72 rounded-2xl border border-slate-700 flex-shrink-0 shadow-2xl">
+                <img src="4.jpg" class="w-64 md:w-72 rounded-2xl border border-slate-700 flex-shrink-0 shadow-2xl">
+            </div>
+            <p class="text-center text-gray-500 text-sm mt-2 font-medium">← 스와이프하여 스크린샷 더보기 →</p>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12 border-t border-slate-800 pt-12">
+            <div class="md:col-span-2 space-y-6">
+                <h3 class="text-2xl font-bold">게임 특징</h3>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    🎯 새로운 지뢰찾기를 경험해보세요! "MZ 지뢰찾기"는 시대를 초월한 재미의 지뢰찾기 퍼즐에 감각적이고 현대적인 네온 스타일을 입혔습니다.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check text-blue-500"></i> 랭킹 모드를 통한 전세계 플레이어들과 대결</li>
+                    <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check text-blue-500"></i> 화려한 네온 컬러</li>                    
+                    <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check text-blue-500"></i> 온라인 배틀 기능</li>
+                    <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check text-blue-500"></i> WIFI Off 시에도 광고 없이 게임 가능</li>
+                </ul>
+            </div>
+            
+            <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <h4 class="text-xl font-bold mb-4">Game Info</h4>
+                <div class="space-y-4 text-sm">
+                    <div class="flex justify-between border-b border-slate-700 pb-2">
+                        <span class="text-gray-400">개발자</span>
+                        <span>BITCRAFT</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-700 pb-2">
+                        <span class="text-gray-400">카테고리</span>
+                        <span>퍼즐, 보드</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-700 pb-2">
+                        <span class="text-gray-400">언어</span>
+                        <span>한국어, 영어, 중국어, 일본어</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-5xl mx-auto mt-24 border-t border-slate-800 py-8 text-center text-gray-500 text-sm">
+        &copy; 2026 BITCRAFT. All Rights Reserved.
+    </footer>
+    <div class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-slate-700 p-4 md:hidden z-50">
+        <div class="flex gap-3">
+            <a href="https://play.google.com/store/apps/details?id=kr.co.bitcraft.mine" class="flex-1 bg-white text-black py-3 rounded-xl font-bold flex items-center justify-center text-sm shadow-lg active:scale-95 transition">
+                <i class="fab fa-google-play mr-2"></i> Play Store
+            </a>
+            <a href="#" class="flex-1 bg-white text-black py-3 rounded-xl font-bold flex items-center justify-center text-sm shadow-lg active:scale-95 transition dimmed">
+                <i class="fab fa-apple mr-2"></i> App Store
+            </a>
+        </div>
+    </div>
+
+    <div class="h-24 md:hidden"></div>
+</body>
+</html>

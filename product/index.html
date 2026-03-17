@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITCRAFT Games - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #EDEDED;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+        .dimmed { opacity: 0.5; cursor: not-allowed; }
+
+    </style>
+</head>
+
+<body class="p-6 md:p-12">
+
+    <header class="max-w-6xl mx-auto mb-12 flex justify-between items-center">
+        <div>
+            <h1 class="text-3xl font-bold text-blue-400">BITCRAFT <span class="text-white">GAMES</span></h1>
+            <p class="text-gray-400 mt-2">창의적인 로직과 재미의 결합</p>
+        </div>
+        <a href="https://bitcraft.co.kr"
+            class="text-sm border border-gray-600 px-4 py-2 rounded-full hover:bg-gray-800 transition">Main Site</a>
+    </header>
+
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="game-card bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+            <img src="./sudoku/0.png" alt="스도쿠"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">스도쿠 - 심플 두뇌 퍼즐</h3>
+                <p class="text-gray-400 text-sm mb-4 line-clamp-2">세계에서 가장 인기 있는 숫자 퍼즐로 두뇌를 단련하세요! 초보자부터 스도쿠 마스터까지, 
+                    아름답게 디자인된 앱으로 프리미엄 퍼즐 경험을 즐기세요. 체스 기물을 활용한 새로운 스도쿠 게임도 즐기세요</p>
+                <div class="flex gap-2">
+                    <a href="sudoku/index.html"
+                        class="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-sm font-bold transition text-center">상세보기</a>
+                </div>
+                <div class="flex gap-2 mt-3">
+                    <a href="https://play.google.com/store/apps/details?id=kr.co.bitcraft.sudoku"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900">
+                        <i class="fab fa-google-play mr-2"></i> Play Store
+                    </a>
+                    <a href="#"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900 dimmed">
+                        <i class="fab fa-apple mr-2"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+                <div class="game-card bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+            <img src="./make10/0.png" alt="Make 10"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Make 10</h3>
+                <p class="text-gray-400 text-sm mb-4 line-clamp-2">숫자를 조합해 10을 완성하세요! 집중력과 두뇌 회전을 높여주는 중독성 강한 숫자 퍼즐 게임입니다.</p>
+                <div class="flex gap-2">
+                    <a href="make10/index.html"
+                        class="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-sm font-bold transition text-center">상세보기</a>
+                </div>
+                <div class="flex gap-2 mt-3">
+                    <a href="#"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900 dimmed">
+                        <i class="fab fa-google-play mr-2"></i> Play Store
+                    </a>
+                    <a href="#"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900 dimmed">
+                        <i class="fab fa-apple mr-2"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+            <img src="./magicsquare/0.png" alt="마방진 & 지수귀문도"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">마방진 & 지수귀문도</h3>
+                <p class="text-gray-400 text-sm mb-4 line-clamp-2">전설적인 수학 퍼즐 **마방진**과 한국의 전통 수학 문제 **지수귀문도**를 하나의 앱에서 즐겨보세요.
+                    간단한 규칙 속에 숨겨진 깊이 있는 논리를 파헤치며, 집중력과 사고력을 기를 수 있습니다.</p>
+                <div class="flex gap-2">
+                    <a href="magicsquare/index.html"
+                        class="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-sm font-bold transition text-center">상세보기</a>
+                </div>
+                <div class="flex gap-2 mt-3">
+                    <a href="https://play.google.com/store/apps/details?id=kr.co.bitcraft.magicSquare"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900">
+                        <i class="fab fa-google-play mr-2"></i> Play Store
+                    </a>
+                    <a href="#"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900 dimmed">
+                        <i class="fab fa-apple mr-2"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+            <img src="./mine/0.jpg" alt="MZ 지뢰찾기 "
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">MZ 지뢰찾기  </h3>
+                <p class="text-gray-400 text-sm mb-4 line-clamp-2">새로운 지뢰찾기를 경험해보세요! "MZ 지뢰찾기"는 시대를 초월한 재미의 지뢰찾기 퍼즐에 감각적이고 현대적인 네온 스타일을 입혔습니다</p>
+                <div class="flex gap-2">
+                    <a href="mine/index.html"
+                        class="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-sm font-bold transition text-center">상세보기</a>
+                </div>
+                <div class="flex gap-2 mt-3">
+                    <a href="https://play.google.com/store/apps/details?id=kr.co.bitcraft.mine"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900">
+                        <i class="fab fa-google-play mr-2"></i> Play Store
+                    </a>
+                    <a href="#"
+                        class="flex-1 bg-black flex items-center justify-center py-2 rounded-lg border border-gray-700 hover:bg-gray-900 dimmed">
+                        <i class="fab fa-apple mr-2"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div id="gameModal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <div
+            class="bg-slate-900 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-700 relative">
+            <button onclick="closeModal()"
+                class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-white">&times;</button>
+
+            <div class="p-8">
+                <h2 id="modalTitle" class="text-3xl font-bold mb-4">Game Title</h2>
+
+                <div class="flex gap-4 overflow-x-auto mb-8 pb-4">
+                    <img src="https://via.placeholder.com/300x500/334155/94a3b8?text=Screen+1"
+                        class="rounded-xl flex-shrink-0 h-80">
+                    <img src="https://via.placeholder.com/300x500/334155/94a3b8?text=Screen+2"
+                        class="rounded-xl flex-shrink-0 h-80">
+                    <img src="https://via.placeholder.com/300x500/334155/94a3b8?text=Screen+3"
+                        class="rounded-xl flex-shrink-0 h-80">
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-semibold mb-2 text-blue-400">게임 설명</h4>
+                        <p id="modalDesc" class="text-gray-300 leading-relaxed mb-6">
+                            게임의 상세 특징과 플레이 방식에 대한 설명이 이곳에 표시됩니다.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-blue-400">지금 다운로드</h4>
+                        <div class="flex flex-col gap-3">
+                            <a href="#"
+                                class="bg-white text-black flex items-center justify-center py-3 rounded-xl font-bold hover:bg-gray-200">
+                                <i class="fab fa-google-play mr-2 text-xl"></i> Google Play
+                            </a>
+                            <a href="#"
+                                class="bg-white text-black flex items-center justify-center py-3 rounded-xl font-bold hover:bg-gray-200">
+                                <i class="fab fa-apple mr-2 text-xl"></i> App Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const gameData = {
+            'chess-minesweeper': {
+                title: 'Chess Minesweeper',
+                desc: '나이트의 이동 경로에 지뢰가 몇 개 있는지 계산하며 보드를 정복하세요. 체스 초보자부터 전문가까지 즐길 수 있는 다양한 난이도를 제공합니다.'
+            },
+            'chess-rush-hour': {
+                title: 'Chess Rush Hour',
+                desc: '슬라이딩 퍼즐과 체스의 만남! 킹이 안전하게 탈출구로 향할 수 있도록 다른 기물들을 전략적으로 이동시켜야 합니다. 총 100개 이상의 레벨이 준비되어 있습니다.'
+            }
+        };
+
+        function openModal(gameKey) {
+            const data = gameData[gameKey];
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalDesc').innerText = data.desc;
+            document.getElementById('gameModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('gameModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+
+</html>
